@@ -5,15 +5,15 @@ FROM openjdk:8-jdk-alpine
 # FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/football-league-abansal.jar
+ARG JAR_FILE=target/football-league-subodhk.jar
 
 # cd /opt/app
 WORKDIR /opt/app
 
-# cp target/football-league-abansal.jar /opt/app/football-league-abansal.jar
-COPY ${JAR_FILE} football-league-abansal.jar
+# cp target/football-league-subodhk.jar /opt/app/football-league-subodhk.jar
+COPY ${JAR_FILE} football-league-subodhk.jar
 EXPOSE 8080
-# java -jar /opt/app/football-league-abansal.jar
-ENTRYPOINT ["java","-jar","football-league-abansal.jar"]
+# java -jar /opt/app/football-league-subodhk.jar
+ENTRYPOINT ["java","-jar","football-league-subodhk.jar"]
 # sudo docker build -t spring-boot:1.0 .
 # sudo docker run -d -p 8080:8080 -t spring-boot:1.0
