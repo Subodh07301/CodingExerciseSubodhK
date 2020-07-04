@@ -12,7 +12,7 @@ to production or live environment. In output, display following:
 `Team ID & Name: (<ID>) - <name>  `
 `Overall League Position: <position>  `
 
-http url: `http://localhost:8085/api/service/v1/team/standing?teamName=Leeds&countryName=England&leagueName=Championship`
+http url: `http://localhost:8080/api/service/v1/team/standing?teamName=Leeds&countryName=England&leagueName=Championship`
 
 output: 
 `{

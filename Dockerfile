@@ -12,8 +12,8 @@ WORKDIR /opt/app
 
 # cp target/football-league-abansal.jar /opt/app/football-league-abansal.jar
 COPY ${JAR_FILE} football-league-abansal.jar
-EXPOSE 8085
+EXPOSE 8080
 # java -jar /opt/app/football-league-abansal.jar
 ENTRYPOINT ["java","-jar","football-league-abansal.jar"]
 # sudo docker build -t spring-boot:1.0 .
-# sudo docker run -d -p 8085:8085 -t spring-boot:1.0
+# sudo docker run -d -p 8080:8080 -t spring-boot:1.0
